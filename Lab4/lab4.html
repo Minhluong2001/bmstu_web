@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        body {
+            margin-bottom: 40px;
+            background-color: beige;
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+        main {margin-top: 15px;}
+        form {margin-top: 20px}
+        table {
+            background-color:white;
+            border-collapse: collapse;
+            width: 50%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id = "form">
+        <form action="#">
+            <label for="name" clas="form-label">Product Name</label>
+            <input type="text" name="name" placeholder = "product name" id="name">
+            <label for="price" class="form-label">Product Price</label>
+            <input type="number" name="price" placeholder="product price" id="price">
+            <input type="submit" name="submit" value="ADD" class="btn btn-primary">
+        </form>
+        <hr>
+    </div>
+
+    <div class="row" id="table">
+        <div class="col-6">
+            <p style="font-family:cursive; font-size: 50px;">Product list</p> 
+            <table class="table" border="1" id="table-list">
+            <thead> 
+                <tr>
+                    <th>product name</th>
+                    <th>price $</th>
+                </tr>
+            </thead>
+            </table>
+        </div>
+        <div class="col-6">
+            <p style="font-family:cursive; font-size: 50px;">Shopping list</p> 
+            <table class="table" border ="1" id="table-buy">
+            <thead> 
+                <tr>
+                    <th>product name</th>
+                    <th>price $</th>
+                    <th>quantity</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <th><p style="font-family:cursive; font-size: 40px;">total:</p></th>
+                <th colspan="2" id="total"></th>
+            </tfoot>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>

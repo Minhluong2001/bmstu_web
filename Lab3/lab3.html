@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        body {
+            margin-bottom: 40px;
+            background-color:beige;
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+        main {
+            margin-top: 15px;
+        }
+        .panel {
+            display: none;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <h1>Minhluong's Macbook</h1>
+        <i class="material-icons">favorite</i><button class="accordion">Favorites</button>  
+            <div class="panel">
+                <ul>
+                    <li>Application</li>
+                    <li>AirDrop</li>
+                    <li>Recents</li>
+                    <li>Desktop</li>
+                    <li>Documents</li>
+                    <li>Download</li>
+                    <li>minhluong</li>
+                </ul> 
+            </div> <br>
+
+        <i class="material-icons">cloud</i><button class="accordion">iCould</button> 
+            <div class="panel">
+                <ul>
+                    <li>iCloud Drive</li>
+                </ul> 
+            </div> <br>
+
+        <i class="material-icons">computer</i><button class="accordion">Tags</button> 
+            <div class="panel">
+                <ul>
+                    <li style="color:red">Red</li>
+                    <li style="color:orange">Orange</li>
+                    <li style="color:violet">Violet</li>
+                    <li style="color:green">Green</li>
+                    <li style="color:blue">Blue</li>
+                </ul> 
+            </div> 
+    </div> <br>
+
+    <form>
+        <button type="button" onclick="tree(document.documentElement,'   ') ;
+        return false">Show DOM tree</button>
+    </form>
+    <div id="end"></div>
+    <script src="lab3.js"></script>
+
+</body>
+</html>

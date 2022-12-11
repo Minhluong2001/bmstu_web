@@ -1,0 +1,22 @@
+.row .col .title {
+    color:red;
+    font-size: 30px;
+    font-family: Times New Roman;
+    font-weight: 900;
+}
+.row .col .class-1 {
+    font-family: monospace;
+    color:cornflowerblue;
+}
+.row.col .class-2 {
+    font-family: times;
+    color: red;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+.row .col .class-3 {
+    font-family: Courier New;
+    color:orangered;
+    font-size: 10px;
+}

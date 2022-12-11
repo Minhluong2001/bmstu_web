@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content ="width device-width, initial-scale=1.0">
+    <title> Lab 2</title>
+    <link href="main.css" rel="stylesheet">
+    <style>
+        html{
+            position: relative;
+            min-height: 100%;
+        }
+        body {
+            margin-bottom: 40px;
+        }
+        main {
+            margin-top: 15px;
+        }
+        footer{
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .my-primary {
+            background-color: #ffe6e6;
+            color: #fff;
+        }
+        .table2 table{
+            background-color: beige;
+        }
+        .table2 th, .table2 tr{
+            border: 2px solid;
+        }
+        .table2 td{
+            border: 2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>"
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4">
+                <img src="avatar.jpeg" alt="avatar" width="100" height="100">
+            </div>
+            <div class="col-8">
+                <p>Lab 2</p>
+            </div>
+        </div>
+        <!--Форма-->
+        <div class="row">
+            <div class="col-4">
+                <form action="/lab2.html" method="get">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="Username" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="pass" id="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="repeat" class="form-label">Repeat password</label>
+                        <input type="password" class="form-control" name="repeat" id="repeat">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label"> Email address</label>
+                        <input type="text" class="form-label" name="email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <input type="radio" name="gender" id="gender">Male
+                        <input type="radio" name="gender" id="f">Female
+                    </div>
+                    <div class="mb-3">
+                        <label for="choose" class="form-label">Do you agree to login?</label>
+                        <input type="checkbox" name="check" value="yes" id="choose">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+            </div>
+    <!--Расписание-->
+            <div class="'col-8">
+                <table class="table2">
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">Время</th>
+                            <th colspan="6">Дата</th>
+                        </tr>
+                        <tr>
+                            <th>Понедельник</th>
+                            <th>Вторник</th>
+                            <th>Среда</th>
+                            <th>Четверг</th>
+                            <th>Пятница</th>
+                            <th>Суббота</th>
+                        </tr>
+                        <tr>
+                            <td>8:30-10:05</td>
+                            <td>(сем) Теория вероятностей и математическая статистика 1035л</td>
+                            <td rowspan="2">(лаб) Языки интернет-программирования каф. ИУ6</td>
+                            <td>(лек) Физика 323</td>
+                            <td rowspan="2">(лаб) Физика каф. ФН4</td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td>10:15-11:50</td>
+                            <td>(лек) Теория вероятностей и математическая статистика 218л Горяинов В. Б.</td>
+                            <td>(лек) Электротехника 520 Скворцов С. П.</td>
+                            <td>(лек)Теория вероятностей и математическая статистика 744л Горяинов В. Б.</td> 
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12:00-12:35</td>
+                            <td rowspan="2"></td>
+                            <td>(лек) Языки интернет-программирования 501ю Самарев Р. С.</td>
+                            <td>(сем) Электротехника 520 Скворцов С. П.</td>
+                            <td rowspan="2">(лаб) Электротехника каф. ИУ6</td>
+                            <td>(сем) Иностранный язык каф. Л2</td>
+                            <td>(сем) Правоведение 255л</td>
+                        </tr>
+                        <tr>
+                            <td>13:50-15:25</td>
+                            <td>(лек) Базы данных 501ю Фомин М. М.</td>
+                            <td>(сем) Элективный курс по физической культуре и спорту каф. ФВ</td>
+                            <td>(сем) Элективный курс по физической культуре и спорту каф. ФВ</td>
+                            <td>(сем) Физика 255л</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <!--Параграф-->
+        <div class="row">
+            <div class="col">
+                <p class="title">Лекция 1. Электрическое поле системы неподвижных зарядов в вакууме. Теорема Гаусса для электростатического поля</p>
+                <p style="font-family: cursive;">Электрические заряды не существуют сами по себе, а являются внутренними свойствами элементарных частиц – электронов, протонов и др.</p>
+                <p style="font-family: fantasy;">Опытным путем в 1914 г. американский физик Р. Милликен показал что электрический заряд дискретен.</p>
+                <p class="class-1">Заряд q любого тела составляет целое кратное отэлементарного электрического заряда </p>
+                <p style="font-weight: 100">Силовая характеристика электростатического поля -  напряженность</p>
+                <p class="class-2"> <em>e</em>=<var>1,602&times;</var><var>10<sup>-19</sup></var> Кл</p>
+                <p style="font-weight:100; font-family: Arial; color:yellowgreen">Определение Е со стороны пробного заряда: это отношение силы к величине пробного заряда</p>
+                <p style="color:blue">Энергетическая характеристика электростатического поля – электрический потенциал (скалярный)</p>
+                <p class="class-3">Доп. материалы на персональной страничке <a href="http://bmstu.ru"> www.bmstu.ru/</a></p>
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Today is great!</p>
+        </div>
+    </footer>
+</body>
+</html>
